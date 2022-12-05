@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a1e00fed306b6140904de53674888a8
+guid: 047f344431889a145ab3dfbc4e902fe1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,80 +100,122 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gun animation_0
+      name: player-left_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 48
-        height: 16
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: -8}
-        - {x: -19, y: 3}
-        - {x: 17, y: 3}
-        - {x: 17, y: -8}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 722f133219c18ab438cfc5ac590e38c0
-      internalID: 1743369976
+      spriteID: 3727d17da3f9e2e48958206ca64d94e9
+      internalID: 439928247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gun animation_1
+      name: player-left_1
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 48
-        height: 16
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: -8}
-        - {x: -19, y: 3}
-        - {x: 17, y: 3}
-        - {x: 17, y: -8}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90baa954af7a0264798fcdb9e26b8470
-      internalID: -872625942
+      spriteID: f27cfda216328124dbb72d45d08a7ecf
+      internalID: -1728237962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gun animation_2
+      name: player-left_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 48
-        height: 16
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: -8}
-        - {x: -19, y: 3}
-        - {x: 17, y: 3}
-        - {x: 17, y: -8}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7691b24c7fa208478f6e7f2bf21dff1
-      internalID: 989582832
+      spriteID: 928313e084f299d4fbd0391cb5f9ca5c
+      internalID: -2142449899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-left_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9697039c1c7004584c9dbebedbe6ce
+      internalID: -2044057495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-left_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac08da26cae94b4e80c3264db7ba7b0
+      internalID: 2089156510
       vertices: []
       indices: 
       edges: []
@@ -189,9 +231,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gun animation_1: -872625942
-      gun animation_2: 989582832
-      gun animation_0: 1743369976
+      player-left_0: 439928247
+      player-left_4: 2089156510
+      player-left_3: -2044057495
+      player-left_2: -2142449899
+      player-left_1: -1728237962
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

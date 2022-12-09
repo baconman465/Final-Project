@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: -5397964443210865203}
   - component: {fileID: 8116895262594790682}
   - component: {fileID: 6303802493596931082}
+  - component: {fileID: 3323822566614398317}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -4936,3 +4937,19 @@ MonoBehaviour:
   rotation: 0
   velocity: {x: 10, y: 0, z: 0}
   lifetime: 1.5
+--- !u!58 &3323822566614398317
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8586795131573799265}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2

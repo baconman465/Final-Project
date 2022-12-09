@@ -159,6 +159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magicBolt: {fileID: 8586795131573799265, guid: 368388ef78ef67a448d38c6d795feb80, type: 3}
   player: {fileID: 7845336591021139447}
+  firePoint: {fileID: 0}
+  particles: {fileID: -6072824126955585436, guid: 368388ef78ef67a448d38c6d795feb80, type: 3}
 --- !u!1 &7845336591326883325
 GameObject:
   m_ObjectHideFlags: 0

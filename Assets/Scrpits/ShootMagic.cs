@@ -21,8 +21,10 @@ public class ShootMagic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //instantiate a magic bolt prefab when left mouse button is clicked
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            //flip the bolt if the player is moving left
              if (Input.GetAxisRaw("Horizontal") < 0)
             {
                 magicBolt.transform.rotation = new Quaternion(0, 0, 180, 0);
@@ -31,8 +33,9 @@ public class ShootMagic : MonoBehaviour
             {
                 magicBolt.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
-            projectileClass bolt = new projectileClass();
+            //instantiate a magic bolt prefab at the firepoint
             Instantiate<GameObject>(magicBolt, firePoint);
+            //remove the magic bolt from its parent
             magicBolt.transform.SetParent(null);
            
         }

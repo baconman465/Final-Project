@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403191186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.39700004, y: 0.0019999966, z: 0.04341284}
+  m_LocalPosition: {x: 0.39700004, y: 0.0019999966, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -368,6 +368,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6431230952724122665, guid: a6f22cf6729357641bc458c74937aa12, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6431230952724122665, guid: a6f22cf6729357641bc458c74937aa12, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839129234247108157, guid: a6f22cf6729357641bc458c74937aa12, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8776136497218853385, guid: a6f22cf6729357641bc458c74937aa12, type: 3}
       propertyPath: m_Name
       value: Green Slime

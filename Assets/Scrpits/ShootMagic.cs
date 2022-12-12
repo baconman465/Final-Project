@@ -34,9 +34,9 @@ public class ShootMagic : MonoBehaviour
                 magicBolt.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
             //instantiate a magic bolt prefab at the firepoint
-            Instantiate<GameObject>(magicBolt, firePoint);
+            GameObject firedMagicBolt = Instantiate(magicBolt, firePoint);
             //remove the magic bolt from its parent
-            magicBolt.transform.SetParent(null);
+            firedMagicBolt.transform.SetParent(null);
            
         }
             

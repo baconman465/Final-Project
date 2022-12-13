@@ -5,22 +5,24 @@ using UnityEngine;
 public class EnemyInteractions : MonoBehaviour
 {
     HealthManager hm;
+    Animator animator;
     public GameObject[] projectiles;
 
     // Start is called before the first frame update
     private void Awake()
     {
-        Time.timeScale = 0.1f;
         hm = gameObject.GetComponent<HealthManager>();
+        animator = GetComponent<Animator>();
     }
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        //jack k did some stuff when trying to fix collision i dunno what 
         projectiles = GameObject.FindGameObjectsWithTag("Projectile");
         foreach (GameObject projectile in projectiles)
         {
@@ -29,11 +31,13 @@ public class EnemyInteractions : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("poop");
+        //if an enemy touches a slime, play hit animation and call losehealth funtion from HealthManager
         if (collision.gameObject.tag == "Projectile")
         {
             Debug.Log("hit");
             hm.loseHealth();
+
+            animator.SetBool("Hit", true);
         }
     }
 

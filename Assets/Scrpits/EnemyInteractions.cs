@@ -22,7 +22,7 @@ public class EnemyInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //jack k did some stuff when trying to fix collision i dunno what 
+        //jack k did some stuff when trying to fix my collision i dunno what 
         projectiles = GameObject.FindGameObjectsWithTag("Projectile");
         foreach (GameObject projectile in projectiles)
         {
@@ -34,7 +34,6 @@ public class EnemyInteractions : MonoBehaviour
         //if an enemy touches a slime, play hit animation and call losehealth funtion from HealthManager
         if (collision.gameObject.tag == "Projectile")
         {
-            Debug.Log("hit");
             hm.loseHealth();
 
             animator.SetBool("Hit", true);

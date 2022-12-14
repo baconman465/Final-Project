@@ -38,6 +38,7 @@ public class RotateArm : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.position = new Vector3(defaultx, defaulty);
 
+        //rotate the arm 180 degrees if the player is moving left
         if(Input.GetAxisRaw("Horizontal") < 0)
         {
             transform.rotation = Quaternion.AngleAxis((angle+180), Vector3.forward);

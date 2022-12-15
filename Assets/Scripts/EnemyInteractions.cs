@@ -7,7 +7,8 @@ public class EnemyInteractions : MonoBehaviour
     HealthManager hm;
     Animator animator;
     public GameObject[] projectiles;
-    public int slimesKilled;
+    static public int slimesKilled = 0;
+    //public GameObject winText;
 
     // Start is called before the first frame update
     private void Awake()
@@ -17,7 +18,7 @@ public class EnemyInteractions : MonoBehaviour
     }
     void Start()
     {
-        slimesKilled = 0;
+        
     }
 
     // Update is called once per frame
@@ -35,12 +36,13 @@ public class EnemyInteractions : MonoBehaviour
         //if an enemy touches a slime, play hit animation and call losehealth funtion from HealthManager
         if (collision.gameObject.tag == "Projectile")
         {
-            if(hm.currentHealth == 1)
-            {
-                ++slimesKilled;
-            }
             hm.loseHealth();
             animator.SetBool("Hit", true);
+            if (hm.currentHealth == 0)
+            {
+                //adds to the slime kill count
+                ++slimesKilled;
+            }
         }
     }
 

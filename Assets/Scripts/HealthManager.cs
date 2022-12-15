@@ -18,6 +18,8 @@ public class HealthManager : MonoBehaviour
 
     }
 
+    //these are pretty self explanatory
+
     public void loseHealth()
     {
         --currentHealth;

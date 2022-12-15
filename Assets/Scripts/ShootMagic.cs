@@ -37,7 +37,6 @@ public class ShootMagic : MonoBehaviour
             GameObject firedMagicBolt = Instantiate(magicBolt, firePoint);
             //remove the magic bolt from its parent
             firedMagicBolt.transform.SetParent(null);
-           
         }
             
     }

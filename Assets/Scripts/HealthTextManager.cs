@@ -22,6 +22,7 @@ public class HealthTextManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //sets the health textbox to the player's current health
         playerHealthAmount = playerHealth.currentHealth;
         healthText = playerHealthAmount.ToString();
 

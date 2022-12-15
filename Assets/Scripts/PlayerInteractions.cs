@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class PlayerInteractions : MonoBehaviour
 {
     HealthManager hm;
+    public int health;
+    public GameObject skillIssue, winText;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,14 @@ public class PlayerInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        health = hm.currentHealth;
 
+        //if 100 slimes have been killed, show win text and stop the game
+        if(EnemyInteractions.slimesKilled == 100)
+        {
+            winText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,6 +37,7 @@ public class PlayerInteractions : MonoBehaviour
             if(hm.currentHealth == 1)
             {
                 Camera.main.transform.SetParent(null);
+                skillIssue.gameObject.SetActive(true);
             }
             hm.loseHealth();
         } 

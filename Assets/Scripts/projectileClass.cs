@@ -20,6 +20,7 @@ public class projectileClass : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //i took this from jauntlet, it just handles projectile math
         transform.Translate(new Vector3(Mathf.Cos(rotation * Mathf.Deg2Rad), Mathf.Sin(rotation * Mathf.Deg2Rad)) * Time.deltaTime * speed + velocity * Time.deltaTime);
         
         //decrease timer set in inspector until it hits zero, then the projectile dies

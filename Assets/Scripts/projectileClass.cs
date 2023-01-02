@@ -33,7 +33,7 @@ public class projectileClass : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //projectiles get destroyed when colliding with anything
+        //projectiles get destroyed when colliding with anything but the player
         if (!(collision.gameObject.tag == "Player"))
         {
             Destroy(gameObject);

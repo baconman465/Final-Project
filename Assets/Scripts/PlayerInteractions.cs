@@ -19,9 +19,9 @@ public class PlayerInteractions : MonoBehaviour
     void Update()
     {
         health = hm.currentHealth;
-
+        
         //if 100 slimes have been killed, show win text and stop the game
-        if(EnemyInteractions.slimesKilled == 100)
+        if(EnemyInteractions.slimesKilled >= 100)
         {
             winText.gameObject.SetActive(true);
             Time.timeScale = 0;

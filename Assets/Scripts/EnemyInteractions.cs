@@ -24,7 +24,7 @@ public class EnemyInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //jack k did some stuff when trying to fix my collision i dunno what 
+        //jack k did some stuff when trying to fix my collision, i dont know what it is but it doesnt affect anything
         projectiles = GameObject.FindGameObjectsWithTag("Projectile");
         foreach (GameObject projectile in projectiles)
         {

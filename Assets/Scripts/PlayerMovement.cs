@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
+        // if the player is moving left, flips the player sprite to face left
        if (movement.x < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);

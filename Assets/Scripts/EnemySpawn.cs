@@ -9,14 +9,14 @@ public class EnemySpawn : MonoBehaviour
     public GameObject slime;
     System.Random randx = new System.Random();
     System.Random randy = new System.Random();
-    int slimeamount;
+    int slimeAmount;
 
     // Start is called before the first frame update
     void Start()
     {
         slimes = GameObject.FindGameObjectsWithTag("Enemy");
 
-        slimeamount = 5;
+        slimeAmount = 5;
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class EnemySpawn : MonoBehaviour
         //if there are no slimes then some spawn in random positions
         if(slimes.Length == 0)
         {
-            for (int i = 0; i < slimeamount; i++)
+            for (int i = 0; i < slimeAmount; i++)
             {
                 float randomx = randx.Next(-20, 20);
                 float randomy = randy.Next(-12, 12);
@@ -36,7 +36,7 @@ public class EnemySpawn : MonoBehaviour
                 Instantiate(slime);
             }
             //the amount of slimes spawned increases by 3 after each wave
-            slimeamount = slimeamount + 3;
+            slimeAmount = slimeAmount + 3;
         }
         
     }

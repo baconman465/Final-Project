@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillIssue : MonoBehaviour
 {
-    //so this script may be unnecessary but who cares
+    //so this script may be unnecessary
 
     // Start is called before the first frame update
     void Start()
